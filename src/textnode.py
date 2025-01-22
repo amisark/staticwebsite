@@ -14,11 +14,11 @@ class TextNode:
         self.text_type = text_type
         self.url = url
 
-    def __eq__(self, other_textnode):
+    def __eq__(textnode1, textnode2):
         retcode = False
-        if se1f.text == other_textnode.text :
-            if self.text_type == other_textnode.text_type :
-                if self.url == other_textnode.url :
+        if textnode1.text == textnode2.text :
+            if textnode1.text_type == textnode2.text_type :
+                if textnode1.url == textnode2.url :
                     retcode = True
         return(retcode)
 
